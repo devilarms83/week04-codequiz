@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code Quiz JS</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./Assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -16,7 +16,7 @@
         <h1 class="timer">Time :<span id="timer"></span></h1>
       </header>
       
-      <section class="mainmenu">
+      <section id="mainmenu">
         <div>
           <h2>Coding Quiz Challenge</h2>
           <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
@@ -24,20 +24,20 @@
         </div>
       </section>
 
-      <section class="quiz">
+      <section id="quiz">
         <div>
           
         </div>
       </section>
 
-      <section class="validator">
+      <section id="validator">
         <div>
           <span class="correct">Correct!</span>
           <span class="incorrect">Incorrect!</span>
         </div>
       </section>
 
-      <section class="end">
+      <section id="end" class="hide" data-state="hidden">
         <div>
           <h2>All done!</h2>
           <p>Your final score is <span class="finalscore"></span>.</p>
@@ -46,7 +46,7 @@
         </div>
       </section>
 
-      <section class="score">
+      <section id="score">
         <div>
           
         </div>
@@ -55,6 +55,6 @@
 
 
     </div>
-    <script src="./assets/js/script.js"></script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>
