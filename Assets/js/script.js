@@ -151,13 +151,15 @@ function quizStart() {
   shuffle(quizAr)
   // Calls timer and displayQ functions
   timer()
-  displayQ()
+  displayQ() 
+  
 }
 
 // Timer that counts down from 60
 function timer() {
   timetextEl.hidden = false
   timerEl.hidden = false
+  topEl.style.justifyContent = "center"
 
   // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     var timeInterval = setInterval(function () {
@@ -177,8 +179,10 @@ function timer() {
         timerEl.textContent = ''
         // Use `clearInterval()` to stop the timer
         clearInterval(timeInterval)
+        topEl.style.justifyContent = "space-between"
         // Call the `quizEnd()` function
         quizEnd()
+        
       }
     }, 1000)
 }
