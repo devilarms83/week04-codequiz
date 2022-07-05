@@ -11,51 +11,56 @@
   <body>
     <div class="wrapper">
       
-      <header>
-        <h1 id="highscore">View Highscores</h1>
+      <!-- Main header section with highscore and timer -->
+      <header id="top">
+        <h1 id="highscore">View high scores</h1>
         <h1 id="timetext">Time: <span id="timer"></span></h1>
       </header>
       
+      <!-- Quiz Start container -->
       <section id="mainmenu" >
-        <div>
-          <h2>Coding Quiz Challenge</h2>
+        <div class="container mainmenu">
+          <h1>Coding Quiz Challenge</h1>
           <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-          <button id="start">Start Quiz</button>
+          <button id="start" class="btn start">Start Quiz</button>
         </div>
       </section>
 
-      <section id="quiz" hidden>
-        <div>
-          
+      <!-- Quiz container -->
+      <section id="quiz" hidden >
+        <div class="container mainmenu">
+          <p id="questions"></p>
+          <p id="answers" class="selections"></p>
         </div>
       </section>
 
-      <section id="validator">
-        <div>
-          <span id="correct" hidden>Correct!</span>
-          <span id="incorrect" hidden>Incorrect!</span>
+      <!-- Answer Checker -->
+      <section id="validator" >
+        <div class="container">
+          <span id="correct" hidden class="correct">Correct!</span>
+          <span id="incorrect" hidden class="incorrect">Sorry, wrong answer!</span>
         </div>
       </section>
 
+      <!-- Quiz End container -->
       <section id="end" hidden>
-        <div>
-          <h2>All done!</h2>
+        <div class="container mainmenu">
+          <h1>All done!</h1>
           <p>Your final score is <span id="finalscore"></span>.</p>
           <label for="initials">Enter Initials:</label>
-          <input type="text" id="initials" name="initials"> <button id="submit">Submit</button>
+          <input type="text" id="initials" name="initials"> <button id="submit" class="btn">Submit</button>
         </div>
       </section>
 
+      <!-- High Score Container -->
       <section id="score" hidden>
-        <div>
+        <div class="container mainmenu">
           <h1>Highscores</h1>
           <ul id="scorelist"></ul>
-          <button id="restart">Start Over</button>
-          <button id="clearscore">Clear Highscores</button>
+          <button id="back" class="btn">Go Back</button>
+          <button id="clearscore" class="btn">Clear high scores</button>
         </div>
       </section>
-
-
 
     </div>
     <script src="./Assets/js/script.js"></script>

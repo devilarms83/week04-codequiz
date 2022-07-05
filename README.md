@@ -6,7 +6,7 @@
 
   <p align="center">
     <a href="https://devilarms83.github.io/week04-codequiz/">
-        <img src="./Assets/images/04_demo.gif" alt="" >
+        <img src="./Assets/images/Code_Quiz_JS.gif" alt="" >
     </a>
     <br />
     <br />
