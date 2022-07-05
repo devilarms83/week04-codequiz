@@ -146,6 +146,7 @@ function quizStart() {
   // Updates section views
   mainEl.hidden = true
   quizEl.hidden = false
+  highscoreEl.hidden = true
   // Calls shuffle function that randomizes quiz array
   shuffle(quizAr)
   // Calls timer and displayQ functions
@@ -286,6 +287,7 @@ function displayScores() {
   highscoreEl.hidden = true
   timetextEl.hidden = true
   timerEl.hidden = true
+
 }
 
 // Clears local storage of stored high scores
