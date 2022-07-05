@@ -1,0 +1,172 @@
+:root {
+    --primary: #4e2a84;
+    --secondary: #836EAA;
+    --tertiary: #80c0f9;
+    --white: #fff;
+}
+
+/* Body */
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    background-color: var(--white);
+  }
+
+/* Initial div */
+.wrapper {
+    padding: 25px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+}
+
+/* Section */
+section {
+    padding: 25px;
+}
+
+/* h1 */
+h1 {
+    font-size: 2vw;
+}
+
+/* p */
+p {
+    font-size: 1.5vw;
+}
+
+/* label */
+label {
+    font-size: 1.5vw;
+}
+
+/* input */
+input {
+    padding: 10px;
+}
+
+/* li */
+li {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* high score hover */
+#highscore:hover {
+    color: red;
+}
+
+/* timer text */
+#timetext {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* container class */
+.container {
+    padding: 20px;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/* mainmenu class */
+.mainmenu {
+    align-items: center;
+    text-align: center;
+    background-color: var(--tertiary);
+    border-radius: 10px;
+}
+
+.mainmenu h2, .mainmenu p {
+    text-align: center;
+    padding: 20px;
+}
+
+/* button class */
+.btn {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 1.5vw;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+/* quiz start class */
+.start {
+    width: 25%;
+    align-items: center;
+}
+
+/* quiz selections and buttons class */
+.selections {
+    display: grid;
+    align-items: center;
+}
+
+.selectbtn {
+    text-align: left;
+}
+
+/* validator classes */
+.correct {
+    font-weight: bold;
+    color: blue;
+    font-size: x-large;
+    text-align: center;
+}
+
+.incorrect {
+    font-weight: bold;
+    color: red;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* responsive style */
+@media screen and (max-width: 1024px) {
+
+    .wrapper {
+        padding: 10px;
+    }
+    
+    .btn {
+        font-size: 2vw;
+    }
+
+    #question {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    label {
+        font-size: 3vw; 
+    }
+
+    ul {
+        font-size: 3vw;
+    }
+
+}
